@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300;700&display=swap');
+
+
+*,*::before ,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif , 'ubuntu',sans-serif;
+    
+}
+ 
+ /* **** Header section starts **** */
+
+ .container{
+    
+   
+    background: url(./images/bg-pattern-intro-desktop.svg) no-repeat left center,linear-gradient( 90deg ,hsl(13, 100%, 72%)  ,hsl(353, 100%, 62%) 60%);
+    background-size: 135%; 
+    
+    border-bottom-left-radius: 5rem ;
+    position: relative;
+    
+}
+
+
+.header {
+    
+    width: 95%;
+    max-width: 1300px;
+    padding: 5rem 1rem;
+    margin: 0 auto;
+   
+}
+.header > .navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 1rem;
+}
+.header > .mobile-menu{
+    display: none;
+}
+.navbar > .menu{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    
+}
+
+.navbar  a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.navbar > .icon{ 
+    display: none;
+}
+.navbar .credentials{
+    margin-left: auto;
+}
+.navbar .credentials > a{
+    padding: 0.8rem 2rem;
+    border: 1px solid white;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    /* font-weight: 900; */
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 600; 
+}
+.navbar .credentials .login{
+    margin-right: 1.5rem;
+    border: none;
+}
+#sign-up{
+    background-color: white;
+    color: hsl(355, 100%, 77%) ;
+    
+}
+#sign-up:hover , #sign-up:focus-visible{
+    color: white;  
+    background:hsl(355, 100%, 77%);
+    border: none;
+    
+}
+
+
+
+/* Creating dropdown menus */
+.menu > div > a{
+    position: relative;
+    font-size: 1.2rem;   
+}
+.menu > div > a:hover, .menu > div > a:hover:focus-visible{
+    border-bottom: 3px solid white;
+}
+.ul{
+   list-style: none; 
+   background-color: white;
+   padding: .5rem 1rem;
+   position: absolute;
+   top: 50px;
+   transform: translate(-95px,75px);
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 0.8rem;
+   text-align: center;
+}
+
+.company{
+    margin-right: 15px;   
+}
+.ul > li{
+    margin-bottom: 15px ;  
+}
+.ul > li:hover , .ul > li:focus-visible{
+    font-weight: 800;
+    cursor: pointer;
+}
+.product,.company,.connect{
+    display: none;
+}
+.ul.show{
+    display: inline-block;
+    
+}
+.header .intro{
+    padding: 4rem 3rem;
+    text-align: center;
+}
+.intro h1{
+    color: white;
+    font-size: 3.5rem;
+}
+.intro p{
+    font-size: 1.2rem;
+    color: white;
+    padding-block: 0.5rem;
+}
+.intro .buttons{
+    padding-block: 1rem;
+    margin-top: 2rem;
+}
+.buttons > a{
+    padding: 1rem 1.5rem;
+    border: 1px solid white;
+    margin: 0 0.6rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    outline: none;
+    text-decoration: none;
+    
+}
+.startbtn{
+    font-weight: 900;
+    background-color: white;
+    color: hsl(355, 100%, 77%);
+    
+}
+.startbtn:hover , .startbtn:focus-visible{
+    color: white;  
+    background:hsl(355, 100%, 77%);
+    border: none;
+    
+}
+.learn{
+    color: rgba(255, 255, 255, 0.878);
+    background-color: transparent;
+    font-weight: 900;
+}
+.learn:hover,
+.learn:focus-visible{
+    background-color: white;
+    color: hsl(355, 100%, 77%);
+    
+}
+
+  /* **** Header section ends **** */
+
+
+
+
+     /* **** mid1 section starts*** */
+
+.mid1{
+    padding: 2rem 0;
+}
+/* .title{
+    text-align: center;
+} */
+.content{
+    
+    height: 56rem;
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+    
+}
+
+.content::after{
+    position: absolute;
+    top: 35px;
+    right: 35%;
+    
+    content: "Designed for the future";
+    font-size: 2.5rem;
+    color: hsl(208, 49%, 24%);
+    font-weight: 700;
+}
+.content .para{
+    padding-right: 1rem;
+    width: 50%;
+    margin: auto 0;
+    order: 1;
+}
+.para .subtitle{
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    color: hsl(208, 49%, 24%);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.para .subcontent{
+    
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    color: hsl(240, 42%, 60%);
+    line-height: 2;
+    word-spacing: 3px;
+    
+}
+.content-img{
+   width: 50%;
+   background: url(images/illustration-editor-desktop.svg) no-repeat;
+   margin-left: auto;
+   order: 2;
+}
+
+
+    /* ****mid1 section ends**** */
+
+
+
+    /* ****mid2 section starts*****/
+
+
+.mid2{
+    width: 100%;
+    border-top-right-radius: 7rem;
+    border-bottom-left-radius: 7rem;
+    padding:4.5rem 2rem;
+    background: url(images/bg-pattern-circles.svg) no-repeat , linear-gradient(90deg, hsl(237, 17%, 21%) 40%,hsl(237, 23%, 32%)) ;
+    background-position: bottom 18% left -43%;
+}
+.infrastructure{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infrastructure .mobile-img{
+    position: relative;
+    height: 270px;
+    top: -135px;
+    
+}
+.infracontent{
+    width: 50%;
+    padding: 1rem 2rem;
+    margin-left: auto;
+    color: hsl(0, 0%, 100%);
+}
+.infracontent h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1.8rem;
+}
+.infracontent p{
+    font-size: 1.1rem;
+    line-height: 2;
+    word-spacing: 3px;
+    
+}
+
+   /* ****mid2 section end**** */
+
+
+
+   /* *****mid3 section start***** */
+
+.mid3{
+    width: 90%;
+    margin-right: auto;
+    display: flex;
+    padding: 5rem 0 ;
+}
+.laptop-img{
+    background: url(images/illustration-laptop-desktop.svg) no-repeat;
+    background-position: right 20% center;
+    width: 50%;
+    height: 50rem;
+}
+.mid3 .para{
+    width: 60%;
+    margin: auto;
+    padding-left: 3rem;
+    
+}
+
+ /* ****mid3 section end**** */
+
+
+
+ /* *****footer section starts***** */
+
+
+.footer{
+    width: 100%;
+    padding: 5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 13%;
+    background-color:  hsl(240, 10%, 16%);
+    color: white;
+    border-top-right-radius: 7rem;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.footerul{
+    margin-left: 2%;
+    list-style: none;
+}
+.footerul li{
+    font-size: 1.1rem;
+    margin-top: 12px ;
+    color: hsla(0, 0%, 100%, 0.585);
+}
+.footerul .firstchild{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1.5rem;
+}
+
+
+ /* **** footer section ends**** */
+
+
+ /* ***** mobile design starts****  */
+
+@media screen and (width <= 900px){
+    .container{
+        background: url(images/bg-pattern-intro-mobile.svg) no-repeat, linear-gradient(160deg,hsl(13, 100%, 72%) 15% ,hsl(353, 100%, 62%) );
+        background-position: bottom 60% left 50%;
+        width: 100%;
+    
+    }
+    .header{
+        width: 95%;
+        max-width: 900px;
+    }
+    .header .navbar{
+        justify-content: space-between;
+        margin: 0 1rem 1rem 1rem;
+    }
+    .navbar .icon{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .navbar .menu , .navbar .credentials {
+        display: none;
+    }
+    .intro h1{
+        font-size: 2.2rem;
+    }
+    .intro p{
+        font-size: 1rem;
+    }
+    .intro .buttons{
+        padding-block: 0.7rem;
+    }
+    .buttons > a{
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+    }
+    .header{
+        position: relative;
+    }
+    .mobile-menu{
+        transition: transform 0.25s ease-in;
+    }
+    .header > .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem ;
+        width: 300px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24),
+                    3px 1px 8px rgba(0,0,0,0.4);
+        position: absolute;
+        top: 30%;
+        left: 23%;
+        transform: scale(0);
+        z-index: 10;
+        
+    }
+    .mobile-menu.open{
+        transform: scale(1);
+        /* transition: transform 0.3s ease-in; */
+    }
+    .mobile-menu > div{
+        padding: 0.5rem 0;
+    }
+    .mobile-menu .line{
+        margin-top:0.5rem;
+    }
+    
+    .mobile-menu > div > a{
+        text-decoration: none;
+        color: hsl(237, 17%, 21%);
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 1.2rem;
+        
+    }
+    .mobile-menu > div > a:focus-visible,
+    .mobile-menu > div > a:hover{
+        color:hsla(237, 18%, 21%, 0.823) ;
+    }
+    /* a[class^="mobile-"] > img{
+        
+        padding: 4px;
+    }
+     */
+    ul[class^="mobile-"]{
+        margin-top: 0.7rem;
+        padding: 0.7rem 0;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0.7rem;
+        display: none;
+    }
+    .mobile-product.view{
+        display: block;
+    }
+    .mobile-company.view{
+        display: block;
+    }
+    .mobile-connect.view{
+        display: block;
+    }
+    ul[class^="mobile-"] > li{
+        margin-top: 0.8rem;
+        color: hsla(208, 42%, 25%, 0.604);
+        cursor: pointer;
+        font-size: 1rem;
+        
+    }
+    ul[class^="mobile-"] > li:hover,
+    ul[class^="mobile-"] > li:focus-visible{
+        color:hsla(208, 42%, 25%, 0.9) ;
+    }
+    .mobile-menu .mobile-credentials{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-credentials .mobile-login{
+        margin-bottom: 0.5rem;
+    }
+    
+    .mobile-credentials .mobile-sign-up{
+        background-color: hsl(355, 100%, 74%);
+        color: white;
+        
+        padding: 1rem 0.5rem;
+        border-radius: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .content{
+        display: block;
+        margin: 0 auto;
+    }
+    .content::after{
+      transform: translate(18%,-5%); 
+      top: -10%; 
+      font-size: 2rem;
+      
+    }
+    
+    .content-img{
+        background: url(images/illustration-editor-mobile.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        padding: 13rem 0;
+        margin-top: 6rem ;
+       
+    }
+    .content .para{
+        display: block;
+        width: 100%;
+        text-align: center;
+
+    }
+    .para .subtitle{
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .para .subcontent{
+        font-size: 1rem;
+        margin-bottom:0;
+        word-spacing: 1.5px;
+        line-height: 2;
+    }
+    .mid2{
+        margin-top: 3rem;
+        background-position:top 110% center;
+        
+    }
+
+    .infrastructure{
+        display: block;
+    }
+    .infrastructure .mobile-img{
+        height: 150px;   
+    }
+    .infrastructure .mobile-img .mobile{
+        height: 25rem;
+        object-position: center;
+        position: relative;
+        top: -45%;
+        right: -15%;
+    }
+    .infracontent{
+        width: 100%;
+        text-align: center;
+        padding: 4rem;
+        /* margin-top: 3rem; */
+        
+    }
+    .infracontent h1{
+        font-size: 1.7rem;
+    }
+    .infracontent p{
+        font-size: 1rem;
+    }
+
+
+    .mid3{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .laptop-img{
+        background: url(images/illustration-laptop-mobile.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 25rem;
+    }
+
+    .footer{
+        padding: 3.5rem 2rem;
+        justify-content: space-around;
+        gap: 8%;
+    }
+    
+}
+
+@media screen and (width <= 600px){
+    .container{
+        width: 100%;
+        & .header{
+            width: 95%;
+            max-width: 600px;
+        }
+        & .intro h1{
+            font-size: 2rem;
+        }
+        & .intro p{
+            font-size: 0.9rem;
+        } 
+        & .intro .buttons{
+            padding: 0;
+        }
+        & .buttons > a{
+            padding: 0.8rem 0.9rem;
+            font-size: 0.8rem;
+        }
+    }
+    .content::after{
+        font-size: 1.7rem;
+    }
+    .content{
+        & .para{
+            padding: 2rem 0;
+            & .subcontent{
+                line-height: 1.5;
+            }
+        }
+    }
+    .mid2{
+        margin-top: 7rem;
+    }
+    .infrastructure .mobile-img{
+        height: 170px;
+
+        & .mobile{
+            height: 20rem;
+            top: -10px;
+            left: 10;
+            
+
+        }
+    }
+    .infracontent{
+        padding: 2rem;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        & .firstchild{
+            margin-top: 2.5rem;
+        }
+    }
+}
+ 
